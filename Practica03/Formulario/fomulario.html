@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="estilos/style.css"/>
+        <script type="text/javascript" src="funciones.js"></script>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Registro de Usuario</h1>
+        </header>
+
+        
+        <form id="formulario01" name="formulario01" method="POST" action="controlador.php" onsubmit="return validar()">
+            <label for="cedula">Cedula: </label>
+            <input type="text" id="cedula" name="cedula"  onkeypress="return soloNumeros(event)" />
+            <br>  
+            <span id="mensajeCedula" class="error"></span>   
+            <br>     
+            <label class="nombres" for="nombres">Nombres: </label>
+            <input type="text" id="nombres" name="nombres" onkeypress="return soloLetras(event)" />
+            <br>   
+            <label class="apellidos" for="apellidos">Apelidos: </label>
+            <input type="text" id="apellidos" name="apellidos" onkeypress="return soloLetras(event)"/>
+            <br>   
+            <label class="direccion" for="direccion">Dirección: </label>
+            <input type="text" id="direccion" name="direccion"  />
+            <br>   
+            <label class="telefono" for="telefono">Teléfono: </label>
+            <input type="text" id="telefono" name="telefono" onkeypress="return soloNumeros(event)" />
+            <br>   
+            <label class="fecha" for="fecha">FechaNacimiento: </label>   
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" onkeypress="return validaEdat(event)" />
+            <br>
+            <label class="correo" for="correo">Correo electrónico: </label>  
+            <input type="text" id="correo" name="correo"  onkeypress="return validarCorreo()"/>
+            <br>  
+            <span id="mensajeCorreo" class="error"></span>  
+            <br>
+            <label class="contrasena" for="contrasena">Contraseña: </label> 
+            <input type="password" id="contrasena" name="contrasena" oninput="validarCorreo(this)"/>
+            <br>
+            <span id="Comentarios" class="error"></span>  
+            <br>
+            <input type="submit" id="crear" name="crear" value="Aceptar" />
+            <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+        </form>            
+    </body>
+</html>

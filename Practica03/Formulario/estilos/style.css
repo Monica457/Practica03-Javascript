@@ -1,0 +1,118 @@
+h1{
+    text-align: center;
+    color: maroon;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mensajeCorreo{
+    color: red;
+    position: relative;
+    top: 70px;
+}
+#mensajeCedula{
+    color: red;
+}
+
+#Comentarios{
+    color: red;
+    position: relative;
+    top: 90px;
+}
+header{
+    background-color: gray;
+}
+
+#formulario01{
+    position: relative;
+    top: 5px;
+    width: 30%;
+    height: 470px;
+    left: 470px;
+    border: teal 2px solid;
+    padding: 15px;
+}
+label{
+    color: white;
+}
+
+label.cedula #cedula{
+    position: relative;
+    top: 10px;
+}
+#cedula{
+    position: relative;
+    left: 20px;
+}
+
+label.nombres, #nombres{
+    position: relative;
+    top: 10px;
+}
+#nombres{
+    position: relative;
+    left: 5px;
+}
+
+label.apellidos, #apellidos{
+    position: relative;
+    top: 20px;
+}
+#apellidos{
+    position: relative;
+    left: 10px;
+}
+label.direccion, #direccion{
+    position: relative;
+    top: 30px;
+}
+#direccion{
+    position: relative;
+    left: 5px;
+}
+label.telefono, #telefono{
+    position: relative;
+    top: 40px;
+}
+#telefono{
+    position: relative;
+    left: 12px;
+}
+label.fecha, #fechaNacimiento{
+    position: relative;
+    top: 50px;
+}
+#fechaNacimiento{
+    position: relative;
+    left: 5px;
+}
+label.correo, #correo{
+    position: relative;
+    top: 60px;
+}
+
+label.contrasena, #contrasena{
+    position: relative;
+    top: 80px;
+}
+#crear, #cancelar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    width: 30%;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius:50px;
+}
+#cancelar{
+    margin: 25px;
+    left: 120px;
+}
+input{
+    margin: 5px;
+}
+
+html{
+    background-color: black;
+}
